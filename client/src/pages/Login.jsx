@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { CameraAlt as CameraAltIcon } from "@mui/icons-material";
+import { VisuallyHiddenInput } from "../components/styles/StyledComponents";
 function Login() {
   const [isLogin, setIsLogin] = useState(true);
 
@@ -88,6 +89,7 @@ function Login() {
                 <IconButton>
                   <>
                     <CameraAltIcon />
+                    <VisuallyHiddenInput type="file" />
                   </>
                 </IconButton>
               </Stack>
